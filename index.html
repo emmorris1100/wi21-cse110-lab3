@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    <head>
+    <title>HTML emmorris User Page</title>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="emmorris User Page">
+    <meta name="keywords" content="cse110, w2021, ucsd, emmorris">
+    <meta name="author" content="Elizabeth Morris">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link prev="Lab 1 Page" href="https://emmorris1100.github.io/emmorris.github.io/">
+    </head>
+    
+  <body>
+    <header>
+    	<h1><center>emmorris.github.io</center></h1>
+        
+        <hr>
+    </header>
+
+    <section>
+    <h2>Welcome to My Page</h2>
+        <picture>
+        <source media="(min-width:500px)" srcset="red-v-blue-code.jpeg">
+        <img src="black-v-white-code.jpg" alt="Binary Code" style="width:auto;">
+        </picture>
+    </section>
+
+    <section>
+        <h3>About Me</h3>
+        <p><div>Hello! I am <strong>Elizabeth Morris</strong>,
+        a 3rd year CSE major, creative writing minor
+        <span style="color:blue">UCSD</span> student.
+        
+        <br><br>
+      
+        While I'm not especially experienced on the front of coding
+        projects outside of PAs, <u><em>I'm ready to learn and happy
+        to help where I can</em></u>. I am decently experienced with
+        problem solving and group work and organization outside of
+        computer engineering contexts, especially on the front of
+        scheduling and planning.</div></p>
+    </section>
+        
+    <section>
+        <h3>Proficiencies:</h3>
+        <ul>
+            <span style="color:green"><code><li><b>Java</b></li>
+            <li><b>C++</b></li></code></span>
+            <li>Generally fast learner</li>
+            <li>Organization</li>
+            <li>Planning</li>
+            <li>Mediation</li>
+            <li>Resourcefullness/Research</li>
+            <li>Determination</li>
+        </ul>
+        <hr>
+    </section>
+    
+    <section>
+        <h3>Learning Goals:</h3>
+        <ol>
+            <li>Find what team position I fit best on a team</li>
+            <li>Master my (school)work schedule</li>
+            <li>Build up my communication and team skills</li>
+            <li>Develop my experience and understanding of industry work</li>
+        </ol>
+        <figure>
+            <img src="stonks.png" alt="Stonks" style="width:50%">
+            <figcaption>Fig.1 - My learning goals [visualized]
+                (hopefully).</figcaption>
+        </figure>
+        <hr>
+    </section>
+    
+    <section>
+        <h3>Schedule</h3>
+        <aside><i>Aside: Avaliability may vary; Feel free to send me an email at <a href="emmorris@ucsd.edu">emmorris@ucsd.edu</a></i></aside>
+        <br>
+
+        <table>
+            <caption>Day by Day Avaliability</caption>
+            
+            <colgroup>
+                <col span="7" style="background-color:rgb(180, 224, 235)">
+            </colgroup>
+            
+            <tr>
+                <th>Time</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+                <td>Avaliable</td>
+                <td>Unavaliable</td>
+                <td>Avaliable</td>
+                <td>Unavaliable</td>
+                <td>Avaliable</td>
+                <td>Unavaliable</td>
+                <td>Avaliable</td>
+            </tr>
+        </table>
+
+        <br><hr>
+    </section>
+    
+    <section>
+        <h3>Multimedia</h3>
+        
+        <iframe src="https://emmorris1100.github.io/emmorris.github.io/" title="Lab 1 User Page"></iframe>
+        
+        <br><br>
+
+        <details>
+            <summary>Lost in the White Noise</summary>
+            <p>I listen to ambient and white noise tracks on <a href="https://www.youtube.com/">YouTube</a> a lot while I work.</p>
+        </details>
+        <br>
+        <audio controls>
+            <source src="MachineComputer Room sound effects.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio><br><br>
+        
+
+        <details>
+            <summary>Griffith Observatory Tesla Coil</summary>
+            <p>Here's a video of the Griffith Observatory Tesla Coil demonstration from when I visited in 2018!</p>
+        </details>
+        <video width="320" height="240" controls>
+            <source src="Tesla Coil.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video><br>
+
+        <p>
+            Unscripted Canvas Below! <br>
+            <canvas id="myCanvas">
+                Your browser does not support the canvas tag.
+            </canvas>
+            <br>Unscripted Canvas Above!
+        </p>
+
+        <p><br>The below circle is a very rounded square.<br>
+        <svg width="400" height="180">
+            <rect x="50" y="20" rx="100" ry="100" width="150" height="150" style="fill:red;opacity:0.75" />
+        </svg>
+        </p>
+
+        <hr>
+    </section>
+
+    <section>
+        <h3>User Forms</h3>
+        <form>
+            <label for="rating">Rating [1-5]:</label>
+            <input type="radio" id="1" name="rating" value="1">
+            <input type="radio" id="2" name="rating" value="2">
+            <input type="radio" id="3" name="rating" value="3">
+            <input type="radio" id="4" name="rating" value="4">
+            <input type="radio" id="5" name="rating" value="5"><br><br>
+
+            <label for="user_experience">User Experience [1-5]:</label>
+            <input type="range" id="score" name="score" min="1" max="5"><br><br>
+
+            <label for="month_of_access">Month of Access:</label>
+            <input type="month" id="month_of_access" name="month_of_access"><br><br>
+
+            <label for="time_of_access">Time of Access:</label>
+            <input type="time" id="time_of_access" name="time_of_access"><br><br>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form><br>
+
+        <label for="passtimes">The Choice is Yours (Hobbies):</label>
+        <select  name="passtimes" id="passtimes">
+            <optgroup label="The Humantities">
+                <option value="drawing">Drawing</option>
+                <option value="writing">Writing</option>
+                <option value="brainstorming">Brainstorming</option>>
+            </optgroup>
+            
+            <optgroup label="The Modding Experience">
+                <option value="skyrim">Skyrim</option>
+                <option value="minecraft">Minecraft</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="connect">What brings you around these parts?:</label>
+        <input list="connect" name="connect" id="source">
+
+        <datalist id="connect">
+            <option value="TA/Grading">
+            <option value="Google Search">
+            <option value="Recommendation">
+            <option value="Teammate">
+        </datalist><br><br>
+
+        <form>
+            <fieldset>
+            <legend>Feeback Form:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="suggestion">Suggestions:</label><br>
+            <textarea id="suggestion" name="suggestion" rows="4" cols="50">Please submit any suggestions here. Thank you!
+            </textarea><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="button" value="Boop Button">
+            </fieldset>
+        </form>
+
+        <br><button type="button">Panic!</button><br><br>
+
+        <input type="hidden" value="Hello Listeners." name="So long Listeners." value="SecretID">
+      
+    </section>
+
+    <template>
+        <h3>Herein Secrets Lie</h3>
+        <p>No secrets, only lies.</p>
+    </template>
+
+    <nav>
+        <a href="https://emmorris1100.github.io/emmorris.github.io/">Lab 1 User Site</a> |
+        <a href="https://emmorris1100.github.io/cse110lab2.github.io/">This Page</a>
+    </nav>
+
+    <footer>
+    	<pre><p>Page by and for: Elizabeth Morris at <a href="emmorris@ucsd.edu">emmorris@ucsd.edu</a></p></pre>
+    </footer>
+
+  </body>
+</html>
