@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html>
-    <html lang="en">
+<html lang="en">
     <head>
     <title>HTML emmorris User Page</title>
-    <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="description" content="emmorris User Page">
     <meta name="keywords" content="cse110, w2021, ucsd, emmorris">
     <meta name="author" content="Elizabeth Morris">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link prev="Lab 1 Page" href="https://emmorris1100.github.io/emmorris.github.io/">
+    <link rel="prev" href="https://emmorris1100.github.io/emmorris.github.io/">
     </head>
     
   <body>
     <header>
-    	<h1><center>emmorris.github.io</center></h1>
+    	<h1>emmorris.github.io</h1>
         
         <hr>
     </header>
@@ -29,7 +27,7 @@
 
     <section>
         <h3>About Me</h3>
-        <p><div>Hello! I am <strong>Elizabeth Morris</strong>,
+        <div><p>Hello! I am <strong>Elizabeth Morris</strong>,
         a 3rd year CSE major, creative writing minor
         <span style="color:blue">UCSD</span> student.
         
@@ -40,14 +38,14 @@
         to help where I can</em></u>. I am decently experienced with
         problem solving and group work and organization outside of
         computer engineering contexts, especially on the front of
-        scheduling and planning.</div></p>
+        scheduling and planning.</p></div>
     </section>
         
     <section>
         <h3>Proficiencies:</h3>
         <ul>
-            <span style="color:green"><code><li><b>Java</b></li>
-            <li><b>C++</b></li></code></span>
+            <li><span style="color:green"><code><b>Java</b></code></span></li>
+            <li><span style="color:green"><code><b>C++</b></code></span></li>
             <li>Generally fast learner</li>
             <li>Organization</li>
             <li>Planning</li>
@@ -122,7 +120,7 @@
         </details>
         <br>
         <audio controls>
-            <source src="MachineComputer Room sound effects.mp3" type="audio/mpeg">
+            <source src="MachineComputer%20Room%20sound%20effects.mp3" type="audio/mpeg">
             Your browser does not support the audio tag.
         </audio><br><br>
         
@@ -132,7 +130,7 @@
             <p>Here's a video of the Griffith Observatory Tesla Coil demonstration from when I visited in 2018!</p>
         </details>
         <video width="320" height="240" controls>
-            <source src="Tesla Coil.mp4" type="video/mp4">
+            <source src="Tesla%20Coil.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video><br>
 
@@ -156,7 +154,7 @@
     <section>
         <h3>User Forms</h3>
         <form>
-            <label for="rating">Rating [1-5]:</label>
+            <label>Rating [1-5]:</label>
             <input type="radio" id="1" name="rating" value="1">
             <input type="radio" id="2" name="rating" value="2">
             <input type="radio" id="3" name="rating" value="3">
@@ -164,7 +162,7 @@
             <input type="radio" id="5" name="rating" value="5"><br><br>
 
             <label for="user_experience">User Experience [1-5]:</label>
-            <input type="range" id="score" name="score" min="1" max="5"><br><br>
+            <input type="range" id="user_experience" name="score" min="1" max="5"><br><br>
 
             <label for="month_of_access">Month of Access:</label>
             <input type="month" id="month_of_access" name="month_of_access"><br><br>
@@ -183,7 +181,7 @@
             <optgroup label="The Humantities">
                 <option value="drawing">Drawing</option>
                 <option value="writing">Writing</option>
-                <option value="brainstorming">Brainstorming</option>>
+                <option value="brainstorming">Brainstorming</option>
             </optgroup>
             
             <optgroup label="The Modding Experience">
@@ -192,8 +190,8 @@
             </optgroup>
         </select><br><br>
 
-        <label for="connect">What brings you around these parts?:</label>
-        <input list="connect" name="connect" id="source">
+        <label for="connection">What brings you around these parts?:</label>
+        <input list="connect" name="source" id="connection">
 
         <datalist id="connect">
             <option value="TA/Grading">
@@ -204,25 +202,25 @@
 
         <form>
             <fieldset>
-            <legend>Feeback Form:</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            
-            <label for="suggestion">Suggestions:</label><br>
-            <textarea id="suggestion" name="suggestion" rows="4" cols="50">Please submit any suggestions here. Thank you!
-            </textarea><br><br>
-            
-            <input type="submit" value="Submit">
-            <input type="button" value="Boop Button">
+                <legend>Feeback Form:</legend>
+                <label for="fbname">Name:</label>
+                <input type="text" id="fbname" name="fbname"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="suggestion">Suggestions:</label><br>
+                <textarea id="suggestion" name="suggestion" rows="4" cols="50">Please submit any suggestions here. Thank you!
+                </textarea><br><br>
+                
+                <input type="submit" value="Submit">
+                <input type="button" value="Boop Button">
             </fieldset>
         </form>
 
         <br><button type="button">Panic!</button><br><br>
 
-        <input type="hidden" value="Hello Listeners." name="So long Listeners." value="SecretID">
+        <input type="hidden" value="Hello Listeners." name="So long Listeners.">
       
     </section>
 
@@ -237,7 +235,7 @@
     </nav>
 
     <footer>
-    	<pre><p>Page by and for: Elizabeth Morris at <a href="emmorris@ucsd.edu">emmorris@ucsd.edu</a></p></pre>
+    	<pre>Page by and for: Elizabeth Morris at <a href="emmorris@ucsd.edu">emmorris@ucsd.edu</a></pre>
     </footer>
 
   </body>
