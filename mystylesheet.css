@@ -1,6 +1,7 @@
 body {
     background-color: lightgoldenrodyellow;
-    margin: 5vw;                                    /* Relative Unit */
+    margin: 1vw 3vw;                                /* Relative Unit */
+    padding: 1% 1% 1% 1%;
 }
 
 /* Class Selector, Selector List, Descendant Combinator, Combining Two Selectors */
@@ -14,6 +15,18 @@ hr {
     width: 150ch;                                   /* Relative Unit */
 }
 
+.userforms {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+
+    padding-top: 0.5%;
+    padding-right: 0.3%;
+    padding-bottom: 1%;
+    padding-left: 0.5%;
+}
+
 /* ID Selector (#id) */
 
 /* Color Canvas background */
@@ -24,6 +37,8 @@ hr {
     border-radius: 15px 50pt;                       /* Absolute Units x2 */
 
     background-color: rgb(202, 202, 202);
+
+    height: 20vw;
 }
 
 /* Universal Selector (*) */
