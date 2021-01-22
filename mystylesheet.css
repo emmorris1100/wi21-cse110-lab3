@@ -7,6 +7,7 @@ body {
     background-color: lightgoldenrodyellow;
     margin: 1vw 3vw;                                /* Relative Unit */
     padding: 1% 1% 1% 1%;
+    display: inline-block;
 }
 
 /* Class Selector, Selector List, Descendant Combinator, Combining Two Selectors */
@@ -20,6 +21,20 @@ body {
 h1, h2 {
     text-decoration: underline;
     font-family: Fraunces;
+    display: block;
+}
+
+h1 {
+    position: relative;
+    top: 10px;
+    right: 5px;
+    left: 5px;      /* Right and left cancel out */
+}
+
+h2.greeting {
+    position: -webkit-sticky;   /* Safari ref */
+    position: sticky;
+    top: 0;
 }
 
 hr {
@@ -50,6 +65,9 @@ hr {
     background-color: rgb(202, 202, 202);
 
     height: 20vw;
+
+    max-width: 1000px;
+    min-width: 10px;
 }
 
 /* Universal Selector (*) */
@@ -70,6 +88,10 @@ h3.aboutMe, h3 ~ div {
 /* Attribute Selector, Adjacent sibling combinator */
 [name="passtimes"], [type="text"], br+label {
     color: #7851A9;
+}
+
+[type="hidden"] {
+    display:none;
 }
 
 /* Pseudo-class Selectors (e.g. p::hover) */
