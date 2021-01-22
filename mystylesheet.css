@@ -10,6 +10,13 @@ body {
     display: inline-block;
 }
 
+/* changes the background color if the screen is shrunk  */
+@media only screen and (max-width: 1064px) {
+    body {
+      background-color: #CCCCFF;
+    }
+}
+
 /* Class Selector, Selector List, Descendant Combinator, Combining Two Selectors */
 
 .greeting, header h1, pre.footer {
@@ -37,6 +44,7 @@ h2.greeting {
     top: 0;
 }
 
+
 hr {
     width: 150ch;                                   /* Relative Unit */
 }
@@ -51,6 +59,23 @@ hr {
     padding-right: 0.3%;
     padding-bottom: 1%;
     padding-left: 0.5%;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+
+nav {
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* ID Selector (#id) */
@@ -86,7 +111,7 @@ h3.aboutMe, h3 ~ div {
 /* Element Selector (element) */
 
 /* Attribute Selector, Adjacent sibling combinator */
-[name="passtimes"], [type="text"], br+label {
+[name="passtimes"], [type="text"], br+label, form > label, section > label {
     color: #7851A9;
 }
 
@@ -96,10 +121,10 @@ h3.aboutMe, h3 ~ div {
 
 /* Pseudo-class Selectors (e.g. p::hover) */
 
-a:link {
+a:hover {
     color: hsla(195, 91%, 48%);
 }
 
-a:visited {
+a:active {
     color: hsla(195, 91%, 25%, 0.85);
 }
