@@ -154,7 +154,8 @@
 
     <section class="userforms">
         <h3>User Forms</h3>
-        <form>
+        
+        <form class=rating>
             <label>Rating [1-5]:</label>
             <input type="radio" id="1" name="rating" value="1">
             <input type="radio" id="2" name="rating" value="2">
@@ -175,31 +176,34 @@
             <input type="text" id="name" name="name"><br><br>
             <input type="reset" value="Reset">
             <input type="submit" value="Submit">
-        </form><br>
+        </form>
 
-        <label for="passtimes">The Choice is Yours (Hobbies):</label>
-        <select  name="passtimes" id="passtimes">
-            <optgroup label="The Humantities">
-                <option value="drawing">Drawing</option>
-                <option value="writing">Writing</option>
-                <option value="brainstorming">Brainstorming</option>
-            </optgroup>
-            
-            <optgroup label="The Modding Experience">
-                <option value="skyrim">Skyrim</option>
-                <option value="minecraft">Minecraft</option>
-            </optgroup>
-        </select><br><br>
+        <section>
+            <label for="passtimes">The Choice is Yours (Hobbies):</label>
+            <select  name="passtimes" id="passtimes">
+                <optgroup label="The Humantities">
+                    <option value="drawing">Drawing</option>
+                    <option value="writing">Writing</option>
+                    <option value="brainstorming">Brainstorming</option>
+                </optgroup>
+                
+                <optgroup label="The Modding Experience">
+                    <option value="skyrim">Skyrim</option>
+                    <option value="minecraft">Minecraft</option>
+                </optgroup>
+            </select>
 
-        <label for="connection">What brings you around these parts?:</label>
-        <input list="connect" name="source" id="connection">
+            <br>
 
-        <datalist id="connect">
-            <option value="TA/Grading">
-            <option value="Google Search">
-            <option value="Recommendation">
-            <option value="Teammate">
-        </datalist><br><br>
+            <label for="connection">What brings you around these parts?:</label>
+            <input list="connect" name="source" id="connection">
+            <datalist id="connect">
+                <option value="TA/Grading">
+                <option value="Google Search">
+                <option value="Recommendation">
+                <option value="Teammate">
+            </datalist>
+        </section>
 
         <form>
             <fieldset>
@@ -232,7 +236,8 @@
 
     <nav>
         <a href="https://emmorris1100.github.io/emmorris.github.io/">Lab 1 User Site</a> |
-        <a href="https://emmorris1100.github.io/cse110lab2.github.io/">Lab 2 User Site</a>
+        <a href="https://emmorris1100.github.io/cse110lab2.github.io/index.html">Lab 2 User Site</a> |
+        <a href="https://emmorris1100.github.io/wi21-cse110-lab3/index.html">Lab 3 User Site</a>
     </nav>
 
     <footer>
