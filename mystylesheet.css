@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Fraunces;
+    src: url(Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf);
+}
+
 body {
     background-color: lightgoldenrodyellow;
     margin: 1vw 3vw;                                /* Relative Unit */
@@ -9,6 +14,12 @@ body {
 .greeting, header h1, pre.footer {
     color: orangered;
     line-height: 2em;                               /* Relative Unit */
+    text-align: center;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    font-family: Fraunces;
 }
 
 hr {
@@ -44,6 +55,10 @@ hr {
 /* Universal Selector (*) */
 * {
     color: rgba(0, 0, 70, 1.0);
+}
+
+h3 {
+    font-family: Fraunces;
 }
 
 h3.aboutMe, h3 ~ div {
